@@ -8,6 +8,7 @@ import { FaGoogle } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import ContactForm from '../components/ContactForm/ContactForm';
 import Map from '../components/Map/Map';
+import HeroImage from '../components/HeroImage/HeroImage';
 
 
 
@@ -22,7 +23,7 @@ export default function Contact() {
 
   return (
     <div>
-      <img src="https://codmountain.s3.us-west-1.amazonaws.com/hooked-up-charter-boat-hero1.jpeg" alt="cover-photo" class="w-full h-80 object-cover"></img>
+      <HeroImage />
 
       <div className="main-content-box flex w-screen h-[auto] pt-[5%]">
 

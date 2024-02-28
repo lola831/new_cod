@@ -5,6 +5,7 @@ import Review from "../components/Review/Review.jsx";
 import Trip from "../components/Trip/Trip.jsx";
 import About from "../components/About/AboutSection.jsx";
 import Focus from "../components/Focus/Focus.jsx";
+import HeroImage from "../components/HeroImage/HeroImage.js";
 
 export default function Home() {
   const [focusPosition, setFocusPosition] = useState({top:0, height:80});
@@ -33,9 +34,10 @@ export default function Home() {
 
 
   return (
+    <div>
+      <HeroImage />
     <div className="flex flex-col h-full w-full home">
-      <img src="https://codmountain.s3.us-west-1.amazonaws.com/hooked-up-charter-boat-hero1.jpeg" alt="cover-photo" class="w-full h-80 object-cover"></img>
-      {/* Mission statement section */}
+     
       <div className="flex flex-grow h-26 w-full bg-vuejs-300 missionContainer">
         <div className="p-6 flex flex-col flex-grow items-center justify-center h-26 mx-auto">
           <article className="flex flex-col h-30 w-11/12 md:w-3/4 lg:w-4/5 items-center">
@@ -64,7 +66,7 @@ export default function Home() {
 
     </div>
 
-
+    </div>
 
 
   )

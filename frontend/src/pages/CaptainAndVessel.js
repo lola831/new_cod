@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import HeroImage from '../components/HeroImage/HeroImage';
 
 export default function CaptainAndVessel() {
 
   return (
     <div className=''>
-      <img src="https://codmountain.s3.us-west-1.amazonaws.com/hooked-up-charter-boat-hero1.jpeg" alt="cover-photo" class="w-full h-80 object-cover"></img>
+     <HeroImage />
       <div className='bg-cyan-600 text-white space-y-4'>
         <h1 className="text-amber-500 text-xl font-bold m-5">About the Captain</h1>
         <p className='ml-5'>Captain Greg Webb brings over a decade of dedicated experience and a genuine love for fishing to Cod Mountain Fish Co.

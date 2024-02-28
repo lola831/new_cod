@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Report from "../components/FishReport/Report";
 import CreateReport from "../components/FishReport/CreateReport";
+import HeroImage from "../components/HeroImage/HeroImage";
 
 export default function FishReport({ isAdmin }) {
   const [fishReports, setFishReports] = useState([]);
@@ -81,8 +82,9 @@ export default function FishReport({ isAdmin }) {
   }
 
   return (
+    <div>
+     <HeroImage />
     <div className="flex flex-col justify-center items-center gap-5">
-      <img src="https://codmountain.s3.us-west-1.amazonaws.com/hooked-up-charter-boat-hero1.jpeg" alt="cover-photo" class="w-full h-80 object-cover"></img>
       {isAdmin && (
         <CreateReport reports={fishReports} setReports={setFishReports} />
       )}
@@ -98,6 +100,7 @@ export default function FishReport({ isAdmin }) {
             handleUpdate={handleUpdate}
           />
         ))}
+    </div>
     </div>
   );
 }

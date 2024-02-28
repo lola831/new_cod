@@ -1,6 +1,7 @@
 import React from 'react';
 import Map from '../components/Map/Map';
 import { Link } from 'react-router-dom';
+import HeroImage from '../components/HeroImage/HeroImage';
 
 export default function TripInfo() {
   const location = {
@@ -11,7 +12,7 @@ export default function TripInfo() {
 
   return (
     <div>
-      <img src="https://codmountain.s3.us-west-1.amazonaws.com/hooked-up-charter-boat-hero1.jpeg" alt="cover-photo" class="w-full h-80 object-cover"></img>
+      <HeroImage />
       <div className='grid grid-cols-2 gap-2 w-full mt-10'>
         <div className='space-y-4'>
           <h3 className='font-bold'>Directions From Highway 17:</h3>

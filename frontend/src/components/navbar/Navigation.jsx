@@ -17,11 +17,11 @@ export default function Navigation() {
   ];
   console.log(location);
   return (
-    <nav className="flex justify-between mt-3 mx-10 items-center absolute top-0 left-0 w-[100%] bg-transparent z-1000 text-white">
+    <nav className="flex mt-8 ml-20 absolute top-0 left-0 w-[100%] bg-transparent z-1000 text-white">
       <Link className="" to={"/"}>
-        <img className="object-contain h-20 w-20" src="./logo.png" alt="Logo"></img>
+        <img className="object-contain h-[100px] w-[100px]" src="./logo.png" alt="Logo"></img>
       </Link>
-      <div className="flex gap-10 items-center">
+      <div className="flex ml-5 items-center gap-10">
         {links.map((link, index) => (
           <Link
             key={index}

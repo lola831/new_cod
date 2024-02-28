@@ -1,10 +1,11 @@
 import React from 'react'
 import Loader from '../utils/Loader'
+import HeroImage from '../components/HeroImage/HeroImage'
 
 export default function Recipes() {
   return (
     <div>
-       <img src="https://codmountain.s3.us-west-1.amazonaws.com/hooked-up-charter-boat-hero1.jpeg" alt="cover-photo" class="w-full h-80 object-cover"></img>
+      <HeroImage />
       <div>Recipes</div>
     </div>
   )
