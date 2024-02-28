@@ -130,7 +130,7 @@ const Calendar = () => {
             <div className="flex justify-center gap-5 ">
                 <div className="calendar-box w-[650px] h-[auto]">
                     <div className="flex gap-5 bg-teal-500 border border-teal-500 justify-center p-1">
-                        <div className="font-semibold">{months[today.month()]}, {today.year()}</div>
+                        <div className="font-semibold w-[150px]">{months[today.month()]}, {today.year()}</div>
                         <div className="flex items-center gap-5">
                             <GrFormPrevious className="w-5 h-5 cursor-pointer" onClick={() => {
                                 setToday(today.month(today.month() - 1))
