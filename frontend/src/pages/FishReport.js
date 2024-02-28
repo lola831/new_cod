@@ -81,7 +81,8 @@ export default function FishReport({ isAdmin }) {
   }
 
   return (
-    <div className="flex flex-col justify-center items-center gap-5 my-5">
+    <div className="flex flex-col justify-center items-center gap-5">
+      <img src="https://codmountain.s3.us-west-1.amazonaws.com/hooked-up-charter-boat-hero1.jpeg" alt="cover-photo" class="w-full h-80 object-cover"></img>
       {isAdmin && (
         <CreateReport reports={fishReports} setReports={setFishReports} />
       )}

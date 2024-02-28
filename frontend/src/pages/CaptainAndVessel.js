@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 export default function CaptainAndVessel() {
 
   return (
-    <div className='grid grid-cols-2 gap-5 w-full mt-10'>
+    <div className=''>
+      <img src="https://codmountain.s3.us-west-1.amazonaws.com/hooked-up-charter-boat-hero1.jpeg" alt="cover-photo" class="w-full h-80 object-cover"></img>
       <div className='bg-cyan-600 text-white space-y-4'>
         <h1 className="text-amber-500 text-xl font-bold m-5">About the Captain</h1>
         <p className='ml-5'>Captain Greg Webb brings over a decade of dedicated experience and a genuine love for fishing to Cod Mountain Fish Co.

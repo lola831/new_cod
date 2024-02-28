@@ -106,6 +106,7 @@ const Calendar = () => {
 
     return (
         <div>
+            <img src="https://codmountain.s3.us-west-1.amazonaws.com/hooked-up-charter-boat-hero1.jpeg" alt="cover-photo" class="w-full h-80 object-cover"></img>
             <div className="border border-teal-500 w-[300px] ml-[85px] h-[auto] mb-5 rounded-md">
                 <div className="pl-3 p-1 font-semibold bg-teal-500 rounded-t">Trip Types</div>
                 <div className="border-t text-sm pl-3 p-1">

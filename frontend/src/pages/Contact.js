@@ -22,7 +22,7 @@ export default function Contact() {
 
   return (
     <div>
-      <img src="https://codmountain.s3.us-west-1.amazonaws.com/hooked-up-charter-boat-hero1.jpeg" alt="cover-photo" class="w-full h-40 object-cover"></img>
+      <img src="https://codmountain.s3.us-west-1.amazonaws.com/hooked-up-charter-boat-hero1.jpeg" alt="cover-photo" class="w-full h-80 object-cover"></img>
 
       <div className="main-content-box flex w-screen h-[auto] pt-[5%]">
 
