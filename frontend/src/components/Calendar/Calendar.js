@@ -93,7 +93,6 @@ const Calendar = () => {
     };
 
     const openModalWithBooking = (date, time, tripType, seatsOpen) => {
-        console.log("booking details~~~~~~", date, time, tripType, seatsOpen)
         const booking = {
             date: date.format('ddd MMM DD YYYY'),
             time,
@@ -108,7 +107,7 @@ const Calendar = () => {
     return (
         <div>
             <div className="border border-teal-500 w-[300px] ml-[85px] h-[auto] mb-5 rounded-md">
-                <div className="pl-3 p-1 font-semibold bg-teal-500">Trip Types</div>
+                <div className="pl-3 p-1 font-semibold bg-teal-500 rounded-t">Trip Types</div>
                 <div className="border-t text-sm pl-3 p-1">
                     <div className="flex items-center gap-2">
                         <img src="./rockfish.png" alt="rockfish" className="h-8 w-10 object-contain" />
@@ -178,8 +177,6 @@ const Calendar = () => {
                                     </div>
                                     {amTripType && (
                                         <div className="pl-1 pb-1">
-                                            {/* <img className="object-contain h-6 w-6" src={tripImages[amTripType]} alt={amTripType} /> */}
-
                                             {amTripType === 'Tuna' ? (
                                                 <>
                                                     <div className="flex">
@@ -251,7 +248,7 @@ const Calendar = () => {
                         {selectedDate.toDate().toDateString()}
                     </div>
                     {selectedDate.isBefore(dayjs().startOf('day')) ? (
-                         <div className="p-3 border text-sm text-slate-500 h-[100px] mt-0 m-[-20px] bg-white">This date is in the past, please choose a new date.</div>
+                        <div className="p-3 border text-sm text-slate-500 h-[100px] mt-0 m-[-20px] bg-white">This date is in the past, please choose a new date.</div>
                     ) : currentDayBookings.some(booking => booking.tripType === 'Tuna') ? (
                         <>
                             <div className="border rounded-md p-2 mt-2 bg-white">
