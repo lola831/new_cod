@@ -366,7 +366,7 @@ const Calendar = () => {
                                             ) : (
                                                 <div className="flex items-center gap-2 mb-2 text-xs">
                                                     <div className="border rounded-md px-2 py-1 inline-block ml-5 bg-slate-200">6am</div>
-                                                    <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white ">Book</button>
+                                                    <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white " onClick={() => openModalWithBooking(selectedDate, "am", amTripType, remainingSeatsAM)}>Book</button>
                                                     <p className="text-xs">({remainingSeatsAM} seats left!)</p>
                                                 </div>
                                             )
@@ -374,7 +374,7 @@ const Calendar = () => {
 
                                         <div className="flex items-center gap-2 text-xs">
                                             <button className="border rounded-md px-2 py-1 inline-block ml-5 bg-slate-200">2pm</button>
-                                            <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white ">Book</button>
+                                            <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white " onClick={() => openModalWithBooking(selectedDate, "pm", amTripType, 6)}>Book</button>
                                             <p className="text-xs">(6 seats left!)</p>
                                         </div>
                                     </div>
@@ -387,7 +387,7 @@ const Calendar = () => {
                                                 </div>
                                                 <div className="flex items-center gap-2 text-xs">
                                                     <button className="border rounded-md px-2 py-1 inline-block ml-5 bg-slate-200">2pm</button>
-                                                    <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white ">Book</button>
+                                                    <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white " onClick={() => openModalWithBooking(selectedDate, "pm", "Rockfish", 6)}>Book</button>
                                                     <p className="text-xs">(6 seats left!)</p>
                                                 </div>
                                             </div>
@@ -402,7 +402,7 @@ const Calendar = () => {
                                                 </div>
                                                 <div className="flex items-center gap-2 text-xs">
                                                     <button className="border rounded-md px-2 py-1 inline-block ml-5 bg-slate-200">2pm</button>
-                                                    <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white ">Book</button>
+                                                    <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white " onClick={() => openModalWithBooking(selectedDate, "pm", "Halibut", 6)}>Book</button>
                                                     <p className="text-xs">(6 seats left!)</p>
                                                 </div>
                                             </div>
@@ -417,7 +417,7 @@ const Calendar = () => {
                                                 </div>
                                                 <div className="flex items-center gap-2 text-xs">
                                                     <button className="border rounded-md px-2 py-1 inline-block ml-5 bg-slate-200">2pm</button>
-                                                    <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white ">Book</button>
+                                                    <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white " onClick={() => openModalWithBooking(selectedDate, "pm", "Wildlife", 6)}>Book</button>
                                                     <p className="text-xs">(6 seats left!)</p>
                                                 </div>
                                             </div>
@@ -444,7 +444,7 @@ const Calendar = () => {
                                         </div>
                                         <div className="flex items-center gap-2 mb-2 text-xs">
                                             <button className="border rounded-md px-2 py-1 inline-block ml-5 bg-slate-200">6am</button>
-                                            <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white ">Book</button>
+                                            <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white " onClick={() => openModalWithBooking(selectedDate, "am", pmTripType, 6)}>Book</button>
                                             <p className="text-xs">(6 seats left!)</p>
                                         </div>
                                         {
@@ -457,7 +457,7 @@ const Calendar = () => {
                                             ) : (
                                                 <div className="flex items-center gap-2 mb-2 text-xs bg-white">
                                                     <div className="border rounded-md px-2 py-1 inline-block ml-5 bg-slate-200">2pm</div>
-                                                    <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white ">Book</button>
+                                                    <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white" onClick={() => openModalWithBooking(selectedDate, "pm", pmTripType, remainingSeatsPM)}>Book</button>
                                                     <p className="text-xs">({remainingSeatsPM} seats left!)</p>
                                                 </div>
                                             )
@@ -472,7 +472,7 @@ const Calendar = () => {
                                                 </div>
                                                 <div className="flex items-center gap-2 text-xs">
                                                     <button className="border rounded-md px-2 py-1 inline-block ml-5 bg-slate-200">6am</button>
-                                                    <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white ">Book</button>
+                                                    <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white" onClick={() => openModalWithBooking(selectedDate, "am", "Rockfish", 6)}>Book</button>
                                                     <p className="text-xs">(6 seats left!)</p>
                                                 </div>
                                             </div>
@@ -487,7 +487,7 @@ const Calendar = () => {
                                                 </div>
                                                 <div className="flex items-center gap-2 text-xs">
                                                     <button className="border rounded-md px-2 py-1 inline-block ml-5 bg-slate-200">6am</button>
-                                                    <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white ">Book</button>
+                                                    <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white" onClick={() => openModalWithBooking(selectedDate, "am", "Halibut", 6)}>Book</button>
                                                     <p className="text-xs">(6 seats left!)</p>
                                                 </div>
                                             </div>
@@ -502,7 +502,7 @@ const Calendar = () => {
                                                 </div>
                                                 <div className="flex items-center gap-2 text-xs">
                                                     <button className="border rounded-md px-2 py-1 inline-block ml-5 bg-slate-200">6am</button>
-                                                    <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white ">Book</button>
+                                                    <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white" onClick={() => openModalWithBooking(selectedDate, "am", "Wildlife", 6)}>Book</button>
                                                     <p className="text-xs">(6 seats left!)</p>
                                                 </div>
                                             </div>
@@ -537,7 +537,7 @@ const Calendar = () => {
                                             ) : (
                                                 <div className="flex items-center gap-2 mb-2 text-xs">
                                                     <div className="border rounded-md px-2 py-1 inline-block ml-5 bg-slate-200">6am</div>
-                                                    <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white ">Book</button>
+                                                    <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white" onClick={() => openModalWithBooking(selectedDate, "am", amTripType, remainingSeatsAM)}>Book</button>
                                                     <p className="text-xs">({remainingSeatsAM} seats left!)</p>
                                                 </div>
                                             )
@@ -552,7 +552,7 @@ const Calendar = () => {
                                             ) : (
                                                 <div className="flex items-center gap-2 mb-2 text-xs">
                                                     <div className="border rounded-md px-2 py-1 inline-block ml-5 bg-slate-200">2pm</div>
-                                                    <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white ">Book</button>
+                                                    <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white" onClick={() => openModalWithBooking(selectedDate, "pm", pmTripType, remainingSeatsPM)}>Book</button>
                                                     <p className="text-xs">({remainingSeatsPM} seats left!)</p>
                                                 </div>
                                             )
@@ -585,7 +585,7 @@ const Calendar = () => {
                                             ) : (
                                                 <div className="flex items-center gap-2 mb-2 text-xs">
                                                     <div className="border rounded-md px-2 py-1 inline-block ml-5 bg-slate-200">6am</div>
-                                                    <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white ">Book</button>
+                                                    <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white" onClick={() => openModalWithBooking(selectedDate, "am", amTripType, remainingSeatsAM)}>Book</button>
                                                     <p className="text-xs">({remainingSeatsAM} seats left!)</p>
                                                 </div>
                                             )
@@ -615,7 +615,7 @@ const Calendar = () => {
                                             ) : (
                                                 <div className="flex items-center gap-2 mb-2 text-xs">
                                                     <div className="border rounded-md px-2 py-1 inline-block ml-5 bg-slate-200">2pm</div>
-                                                    <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white ">Book</button>
+                                                    <button className="rounded-md px-3 py-1 inline-block bg-amber-400 text-white" onClick={() => openModalWithBooking(selectedDate, "pm", pmTripType, remainingSeatsPM)}>Book</button>
                                                     <p className="text-xs">({remainingSeatsPM} seats left!)</p>
                                                 </div>
                                             )
