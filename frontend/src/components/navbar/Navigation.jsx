@@ -1,47 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { capitalizeLink } from "../../utils/utilFunctions";
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaBars, FaTimes } from "react-icons/fa";
 
 export default function Navigation() {
   const location = useLocation().pathname;
+  const [isOpen, setIsOpen] = useState(false); // State to manage dropdown visibility
   const links = [
-    "about",
-    "availability",
-    "trip-info",
-    "fish-report",
-    "captain-and-vessel",
-    "recipes",
-    "contact",
+    "/", // Updated for "Home" link
+    "/about",
+    "/availability",
+    "/trip-info",
+    "/fish-report",
+    "/captain-and-vessel",
+    "/recipes",
+    "/contact",
   ];
-  console.log(location);
+
   return (
-    <nav className="flex mt-8 ml-20 absolute top-0 left-0 w-[100%] bg-transparent z-1000 text-white">
-      <Link className="" to={"/"}>
-        <img className="object-contain h-[100px] w-[100px]" src="./logo.png" alt="Logo"></img>
+    <nav className="flex items-center justify-between p-4 absolute top-0 left-0 w-full bg-transparent text-white">
+      <Link to="/">
+        <img className="h-16 w-16 object-contain" src="./logo.png" alt="Logo" />
       </Link>
-      <div className="flex ml-5 items-center gap-10">
+      {/* Toggle button for mobile view */}
+      <button onClick={() => setIsOpen(!isOpen)} className="text-3xl md:hidden">
+        {isOpen ? <FaTimes /> : <FaBars />}
+      </button>
+      {/* Links container */}
+      <div className={`md:flex md:items-center ${isOpen ? "block" : "hidden"} absolute md:relative top-16 left-0 md:top-0 w-full md:w-auto bg-black md:bg-transparent`}>
         {links.map((link, index) => (
           <Link
             key={index}
             to={link}
-            className={`${location === "/" + link ? "underline" : ""}`}
+            className={`block py-2 px-4 text-white hover:bg-gray-700 ${location === link ? "underline" : ""}`}
           >
-            {capitalizeLink(link)}
+            {link === "/" ? "Home" : capitalizeLink(link.split("/")[1])}
           </Link>
         ))}
-        <div className="flex gap-4">
-          <a
-            href="https://www.facebook.com/Codmountain"
-            className="text-4xl"
-          >
+        {/* Social icons */}
+        <div className="flex gap-4 p-4">
+          <a href="https://www.facebook.com/Codmountain" className="text-xl hover:text-gray-400">
             <FaFacebookF />
           </a>
-          <a
-            href="https://www.instagram.com/codmountainfishco"
-            className="text-4xl"
-          >
+          <a href="https://www.instagram.com/codmountainfishco" className="text-xl hover:text-gray-400">
             <FaInstagram />
           </a>
         </div>
