@@ -15,10 +15,12 @@ export default function Navigation() {
     "/contact",
   ];
 
+  const closeMenu = () => setIsOpen(false);
+
   return (
-    <nav className="flex items-center justify-between p-4 absolute top-0 left-0 w-full bg-transparent text-white">
+    <nav className={`flex items-center justify-between p-2 sm:p-3 md:p-4 lg:p-5 absolute top-0 left-0 w-full ${isOpen ? 'bg-black' : 'bg-transparent'} text-white`}>
       <Link to="/">
-        <img className="h-16 w-16 object-contain" src="./logo.png" alt="Logo" />
+        <img className="h-16 w-16 md:h-24 md:w-24 lg:h-28 lg:w-28 object-contain" src="./logo.png" alt="Logo" />
       </Link>
       {/* Toggle button for mobile view */}
       <button onClick={() => setIsOpen(!isOpen)} className="text-3xl md:hidden">
@@ -30,6 +32,7 @@ export default function Navigation() {
           <Link
             key={index}
             to={link}
+            onClick={closeMenu}
             className={`block py-2 px-4 text-white hover:bg-gray-700 ${location === link ? "underline" : ""}`}
           >
             {link === "/" ? "Home" : capitalizeLink(link.split("/")[1])}
