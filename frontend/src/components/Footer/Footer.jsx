@@ -13,8 +13,8 @@ export default function Footer() {
   // }
 
     return (
-        <footer className="flex justify-evenly bg-teal-500 inset-x-0 bottom-0">
-            <img className="object-contain mt-5 h-20 w-20" src="./logo.png" alt="Logo"></img>
+        <footer className="flex justify-evenly bg-teal-500 inset-x-0 bottom-0 py-5 text-gray-700 font-bold">
+            <img className="object-contain mt-5 h-20 w-20" src="./logo2.png" alt="Logo"></img>
             <Link className="hover:underline" to="/about">About Us</Link>
             <Link className="hover:underline" to="/contact">Contact Us</Link>
             <Link className="hover:underline" to="/faq">FAQs</Link>

@@ -8,7 +8,7 @@ export default function About() {
       <HeroImage />
       <div>
 
-      <h1 className="text-center text-teal-600 text-2xl font-bold mt-10 mb-10">Cod Mountain Fish Co.</h1>
+      <h1 className="text-center text-teal-600 text-2xl font-bold mt-10 mb-10 pt-10">Cod Mountain Fish Co.</h1>
       <p className="w-1/2 text-center mb-3">Welcome to Cod Mountain Fish Co., where every fishing trip is tailored to your preferences and skill level.
         Our dedicated crew is here to ensure that your time on the water is not only productive but also enjoyable
         and filled with excitement.</p>

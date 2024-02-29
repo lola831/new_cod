@@ -21,7 +21,7 @@ export default function Navigation() {
   return (
     <nav className={`flex items-center justify-between p-2 sm:p-3 md:p-4 lg:p-5 absolute top-0 left-0 w-full ${isOpen ? 'bg-black' : 'bg-transparent'} text-white`}>
       <Link to="/">
-        <img className="h-20 w-20 md:h-20 md:w-20 lg:h-28 lg:w-28 object-contain" src="./logo.png" alt="Logo" />
+        <img className="h-[100px] w-[100px] md:h-25 md:w-25 lg:h-28 lg:w-28 object-contain" src="./logo.png" alt="Logo" />
       </Link>
       {/* Toggle button for mobile view */}
       <button onClick={() => setIsOpen(!isOpen)} className="text-3xl md:hidden">
@@ -40,12 +40,12 @@ export default function Navigation() {
           </Link>
         ))}
         {/* Social icons */}
-        <div className="flex items-center gap-4 p-4">
-          <a href="https://www.facebook.com/Codmountain" className="p-2 bg-my-500 bg-opacity-50  hover:bg-my-600 hover:bg-opacity-50 rounded-full">
-            <FaFacebookF className="text-xl hover:scale-105 transform transition-transform duration-150"/>
+        <div className="flex items-center gap-4 lg:gap-5 md:pl-2">
+          <a href="https://www.facebook.com/Codmountain" className="p-2 bg-neutral-800 bg-opacity-50  hover:bg-neutral-900 hover:bg-opacity-50 rounded-full ">
+            <FaFacebookF className="lg:text-xl hover:scale-105 transform transition-transform duration-150"/>
           </a>
-          <a href="https://www.instagram.com/codmountainfishco" className="p-2 bg-my-500 bg-opacity-50  hover:bg-my-600 hover:bg-opacity-50 rounded-full">
-            <FaInstagram className="text-xl hover:scale-105 transform transition-transform duration-150"/>
+          <a href="https://www.instagram.com/codmountainfishco" className="p-2 bg-neutral-800 bg-opacity-50  hover:bg-neutral-900 hover:bg-opacity-50 rounded-full">
+            <FaInstagram className="lg:text-xl hover:scale-105 transform transition-transform duration-150"/>
           </a>
           <div className="inline-block"> {/* Assuming you want the button styled separately */}
             <BookButton size="small"/>

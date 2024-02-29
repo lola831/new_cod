@@ -1,4 +1,5 @@
-/** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -30,7 +31,12 @@ module.exports = {
           "800": "#085653",
           "900": "#042b29"
         }
-      }
+      },
+      fontFamily: {
+        // Define custom font families
+        'sans': ['Open Sans', ...require('tailwindcss/defaultTheme').fontFamily.sans], // Main body font
+        'lobster': ['Lobster', 'cursive'], // Headers font
+      },
     },
   },
   plugins: [
