@@ -5,7 +5,6 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Availability from "./pages/Availability";
 import FishReport from "./pages/FishReport";
-import CaptainAndVessel from "./pages/CaptainAndVessel";
 import Recipes from "./pages/Recipes";
 import Footer from "./components/Footer/Footer";
 import TripInfo from "./pages/TripInfo";
@@ -31,7 +30,6 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/availability" element={<Availability />} />
-        <Route path="/captain-and-vessel" element={<CaptainAndVessel />} />
         <Route path="/trip-info" element={<TripInfo />} />
         <Route
           path="/fish-report"

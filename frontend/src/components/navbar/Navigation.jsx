@@ -5,15 +5,13 @@ import { FaFacebookF, FaInstagram, FaBars, FaTimes } from "react-icons/fa";
 
 export default function Navigation() {
   const location = useLocation().pathname;
-  const [isOpen, setIsOpen] = useState(false); // State to manage dropdown visibility
+  const [isOpen, setIsOpen] = useState(false);
   const links = [
-    "/", // Updated for "Home" link
+    "/",
     "/about",
     "/availability",
     "/trip-info",
     "/fish-report",
-    "/captain-and-vessel",
-    "/recipes",
     "/contact",
   ];
 
