@@ -37,7 +37,7 @@ export default function Home() {
     <div>
       <HeroImage />
     <div className="flex flex-col h-full w-full home">
-      <div className="flex flex-grow h-26 w-full bg-teal-500 missionContainer">
+      <div className="flex flex-grow h-26 w-full bg-teal-500 missionContainer lg:py-5">
         <div className="p-6 flex flex-col flex-grow items-center justify-center h-26 mx-auto">
           <article className="flex flex-col h-30 w-11/12 md:w-3/4 lg:w-4/5 items-center">
             <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl  mb-4 text-neutral-700 font-lobster">Cod Mountain Fish Co.</h1>
@@ -48,7 +48,6 @@ export default function Home() {
           </article>
           <BookButton />
         </div>
-
       </div>
       <div>
         <Trip />
