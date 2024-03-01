@@ -5,9 +5,6 @@ import captain from "../../assets/captain.jpeg";
 
 
 const About = () => {
-
-
-
   return (
     <>
       {/* About us */}
