@@ -46,7 +46,9 @@ export default function Home() {
               your time on the water is not only productive but also enjoyable and filled with excitement.
             </p>
           </article>
+          <div className="hidden md:block">
           <BookButton />
+          </div>
         </div>
       </div>
      {/* Descriptive Text about Various Trip Types */}

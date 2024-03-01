@@ -19,7 +19,7 @@ export default function Navigation() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <nav className={`flex items-center justify-between p-2 sm:p-3 md:p-4 lg:p-5 fixed top-0 left-0 w-full ${isOpen ? 'bg-gray-700' : 'bg-transparent'} text-white z-50`}>
+    <nav className={`flex items-center justify-between p-2 sm:p-3 md:p-4 lg:p-5 absolute top-0 left-0 w-full ${isOpen ? 'bg-gray-700' : 'bg-transparent'} text-white z-50`}>
       <Link to="/">
         <img className="h-[80px] w-[80px] md:h-28 md:w-28 lg:h-28 lg:w-28 object-contain" src="./logo.png" alt="Logo" />
       </Link>
