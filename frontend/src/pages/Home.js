@@ -49,9 +49,15 @@ export default function Home() {
           <BookButton />
         </div>
       </div>
-      <div>
+     {/* Descriptive Text about Various Trip Types */}
+     <div className="px-6 py-4 text-center">
+          <h2 className="text-xl font-semibold text-gray-700 mb-3">Discover Our Trip Types</h2>
+          <p className="text-base text-gray-700 max-w-4xl mx-auto">
+          We offer a range of charters, suitable for anglers of all skill levels.
+          </p>
+        </div>
         <Trip />
-      </div>
+
       <div className=" mb-2 max-w-100% ">
         <About />
       </div>
