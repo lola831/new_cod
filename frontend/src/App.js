@@ -14,14 +14,28 @@ import { authenticate } from "./store/session";
 import Login from "./pages/Login";
 import FAQ from "./pages/FAQ";
 
-
 function App() {
   const dispatch = useDispatch();
   const sessionUser = useSelector((state) => state.session.user);
+
   useEffect(() => {
     dispatch(authenticate());
+
+    // Load Google Maps JavaScript API
+    const script = document.createElement("script");
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}&callback=initMap`;
+    script.async = true;
+    script.defer = true;
+    document.head.appendChild(script);
+
+    return () => {
+      // Cleanup function to remove the script when unmounting
+      document.head.removeChild(script);
+    };
   }, [dispatch]);
-  console.log("sessionUser: ", sessionUser)
+
+  console.log("sessionUser: ", sessionUser);
+
   return (
     <div>
       <Navigation />
