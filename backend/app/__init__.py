@@ -21,7 +21,7 @@ from .api.date_routes import date_routes
 from .api.review_routes import review_routes
 from .api.booking_routes import booking_routes
 from .api.trip_routes import trip_routes
-# app = Flask(__name__, static_folder='../frontend/build', static_url_path='')
+
 app = Flask(__name__, static_folder='../../frontend/build', static_url_path='/')
 
 # Setup login manager
@@ -52,11 +52,9 @@ app.register_blueprint(review_routes, url_prefix='/api/reviews')
 app.register_blueprint(booking_routes, url_prefix='/api/booking')
 app.register_blueprint(trip_routes, url_prefix='/api/trip')
 app.register_blueprint(fish_report_routes, url_prefix='/api/fish_report')
+
 # Application Security
 CORS(app)
-
-
-
 
 @app.before_request
 def https_redirect():

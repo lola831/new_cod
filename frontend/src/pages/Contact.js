@@ -78,7 +78,7 @@ export default function Contact() {
             <ContactForm />
           </div>
           <div className="right-bottom h-[400px] bg-cyan-800 w-[100%] flex justify-center items-center p-[30px]">
-          <Map location={location} zoomLevel={17} />
+          <Map />
           </div>
         </div>
 
