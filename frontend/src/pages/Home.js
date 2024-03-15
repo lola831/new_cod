@@ -60,7 +60,7 @@ export default function Home() {
         </div>
         <Trip />
 
-      <div className=" mb-2 max-w-100% ">
+      <div className=" max-w-100% ">
         <About />
       </div>
 
