@@ -24,7 +24,7 @@ export default function Navigation() {
         <img className="h-[80px] w-[80px] md:h-28 md:w-28 lg:h-28 lg:w-28 object-contain" src="./logo.png" alt="Logo" />
       </Link>
       {/* Toggle button for mobile view */}
-      <button onClick={() => setIsOpen(!isOpen)} className="text-3xl md:hidden">
+      <button onClick={() => setIsOpen(!isOpen)} className="text-3xl pr-5 md:hidden">
         {isOpen ? <FaTimes /> : <FaBars />}
       </button>
       {/* Links container */}
@@ -58,7 +58,7 @@ export default function Navigation() {
         </div>
       </div>
       {/* Fixed BookButton for small screens */}
-      <div className="fixed bottom-4 right-4 md:hidden">
+      <div className="fixed pr-5 bottom-4 right-4 md:hidden">
         <BookButton size="small"/>
       </div>
     </nav>

@@ -35,16 +35,16 @@ export default function Contact() {
             <p className='pb-7 pr-5'>Thank you for your interest in Cod Mountain Fish Co. We're here to answer any questions or concerns you may have. Please feel free to reach out to us using the contact information provided below, or you can fill out the contact form and we'll get back to you as soon as possible.</p>
 
             <div className="addy-phone-email-box flex-col min-h-[200px] gap-1">
-              <div className="flex">
+              <div className="flex items-center">
                 <div className="pr-2 text-cyan-800"><IoLocation /></div>
                 <p>Santa Cruz Harbor - S Dock Slip #15</p>
               </div>
               <p className="pl-6 pb-4">333 Lake Ave, Santa Cruz, CA 95062</p>
-              <div className="flex pb-4">
+              <div className="flex items-center pb-4">
                 <div className="pr-2 text-cyan-800"><FaPhoneAlt /></div>
                 <p>(+1) 831 419 8443</p>
               </div>
-              <div className="flex pb-7">
+              <div className="flex items-center pb-7">
                 <div className="pr-2 text-cyan-800"><MdEmail /></div>
                 <p>codmountainfishco@gmail.com</p>
               </div>
