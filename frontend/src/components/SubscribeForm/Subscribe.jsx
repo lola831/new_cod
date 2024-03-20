@@ -11,7 +11,7 @@ export default function Subscribe () {
 
     return (
         <div>
-            <h2 className="font-bold text-md pb-3 pl-1">Subscribe to our newsletter</h2>
+            <h2 className="font-bold text-md pb-4 pl-1">Subscribe to our newsletter</h2>
             <form className="pl-1 text-xs" onSubmit={handleSubmit}>
                 <div className="pb-2">
                     <input className="p-1 pl-2" placeholder="Name" type="text" value={name} onChange={(e) => {setName(e.target.value)}} required/>

@@ -17,9 +17,9 @@ export default function Footer() {
 
 
   return (
-    <footer className="bg-teal-500 pl-4 pr-4 pt-10 flex flex-col md:flex-row pb-10 md:w-[100%] md:justify-around md:items-start">
+    <footer className="bg-teal-500 pl-4 pr-4 pt-10 flex flex-col md:flex-row pb-10 md:justify-around md:items-start md:gap-8">
 
-      <img className="object-contain h-[110px] w-[110px] md:h-[150px] md:w-[150px] mb-4" src="./logo2.png" alt="Logo"></img>
+      <img className="object-contain h-[130px] w-[130px] md:h-[180px] md:w-[180px] lg:h-[200px] lg:w-[200px] mb-4" src="./logo2.png" alt="Logo"></img>
 
       <div className="mb-4">
         <h2 className="font-bold text-md pb-4 pl-1">Contact Us</h2>
@@ -67,11 +67,18 @@ export default function Footer() {
           <Link className="hover:text-gray-500" to="/fish-report">Fish Report</Link>
           <Link className="hover:text-gray-500" to="/faq">FAQs</Link>
           <a className="hover:text-gray-500" href="https://www.santacruzharbor.org/" target="_blank">Santa Cruz Harbor</a>
-          <a className="hover:text-gray-500" href="https://www.ca.wildlifelicense.com/InternetSales/" target="_blank">Purchase Fishing License</a>
+      <a className="hover:text-gray-500" href="https://www.ca.wildlifelicense.com/InternetSales/" target="_blank">Purchase Fishing License</a>
         </div>
       </div>
 
+      <div>
       <Subscribe />
+      {/* <h2 className="font-bold text-md pb-3 pl-1 pt-5">Links</h2>
+      <div className=" flex flex-col text-xs font-semibold pl-2 gap-2">
+      <a className="hover:text-gray-500" href="https://www.santacruzharbor.org/" target="_blank">Santa Cruz Harbor</a>
+      <a className="hover:text-gray-500" href="https://www.ca.wildlifelicense.com/InternetSales/" target="_blank">Purchase Fishing License</a>
+      </div> */}
+      </div>
 
     </footer>
   )
