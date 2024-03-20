@@ -57,7 +57,6 @@ export default function Footer() {
 
       </div>
 
-
       <div className="mb-6">
         <h2 className="font-bold text-md pb-4 pl-1">Quick Links</h2>
         <div className=" flex flex-col text-xs font-semibold pl-2 gap-2">
@@ -67,6 +66,8 @@ export default function Footer() {
           <Link className="hover:text-gray-500" to="/trip-info">Trip Info</Link>
           <Link className="hover:text-gray-500" to="/fish-report">Fish Report</Link>
           <Link className="hover:text-gray-500" to="/faq">FAQs</Link>
+          <a className="hover:text-gray-500" href="https://www.santacruzharbor.org/" target="_blank">Santa Cruz Harbor</a>
+          <a className="hover:text-gray-500" href="https://www.ca.wildlifelicense.com/InternetSales/" target="_blank">Purchase Fishing License</a>
         </div>
       </div>
 
