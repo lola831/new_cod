@@ -17,12 +17,12 @@ export default function Footer() {
 
 
   return (
-    <footer className="bg-teal-500 pl-4 pr-5 pt-10 flex flex-col md:flex-row pb-10 md:w-[100%] md:justify-around md:items-center">
+    <footer className="bg-teal-500 pl-4 pr-4 pt-10 flex flex-col md:flex-row pb-10 md:w-[100%] md:justify-around md:items-start">
 
-      <img className="object-contain h-[110px] w-[110px] md:h-[150px] md:w-[150px]" src="./logo2.png" alt="Logo"></img>
+      <img className="object-contain h-[110px] w-[110px] md:h-[150px] md:w-[150px] mb-4" src="./logo2.png" alt="Logo"></img>
 
-      <div>
-        <h2 className="font-bold text-md pb-4 pl-1 pt-5">Contact Us</h2>
+      <div className="mb-4">
+        <h2 className="font-bold text-md pb-4 pl-1">Contact Us</h2>
         <div className="flex items-center pl-2">
           <div className="pr-2 text-xl"><IoLocation /></div>
           <p className="text-xs font-semibold">Santa Cruz Harbor - S Dock Slip #15</p>
@@ -58,7 +58,7 @@ export default function Footer() {
       </div>
 
 
-      <div className="pt-5 pb-4">
+      <div className="mb-6">
         <h2 className="font-bold text-md pb-4 pl-1">Quick Links</h2>
         <div className=" flex flex-col text-xs font-semibold pl-2 gap-2">
           <Link className="hover:text-gray-500" to="/about">About Us</Link>
@@ -69,6 +69,8 @@ export default function Footer() {
           <Link className="hover:text-gray-500" to="/faq">FAQs</Link>
         </div>
       </div>
+
+      <Subscribe />
 
     </footer>
   )
