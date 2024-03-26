@@ -16,7 +16,7 @@ const BookButton = () => {
           flex justify-center items-center
         `}
       >
-        Book
+        BOOK NOW
       </button>
     </div>
   );

@@ -23,7 +23,7 @@ export default function HeroImage() {
 
   return (
     <div>
-      <img src={imageUrl} alt="cover-photo" className="w-full h-auto sm:h-[500px] md:h-[500px] lg:h-[500px] xl:h-[500px] object-cover" />
+      <img src={imageUrl} alt="cover-photo" className="w-full h-[500px] object-cover" />
     </div>
   )
 }
