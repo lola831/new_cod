@@ -33,8 +33,9 @@ export default function About() {
             Monterey Bay. Let's make a memory, pull on some fish, and have a good time doing it!</p>
         </div>
 
-        <div className='bg-teal-500 text-white space-y-4'>
-          <h1 className="text-amber-500 text-xl font-bold m-5">About the Captain</h1>
+        <div className='bg-teal-500 text-white p-4 space-y-4'>
+        <img className="" src="./Photos/fam.jpeg" alt="family"></img>
+          <h1 className="text-yellow-500 text-xl font-bold">About the Captain</h1>
           <p className='ml-5'>Captain Greg Webb brings over a decade of dedicated experience and a genuine love for fishing to Cod Mountain Fish Co.
             His journey in the marine industry began as a deckhand on a charter boat in Santa Cruz, California, where he learned the
             ropes and developed a deep appreciation for the ocean.</p>

@@ -21,7 +21,7 @@ const About = () => {
               <h3 className="block mb-2 text-xl md:text-2xl antialiased font-semibold leading-snug tracking-normal text-teal-500">
               About us
               </h3>
-              <p className="block mb-8 text-sm md:text-base antialiased font-normal leading-relaxed text-white">
+              <p className="block mb-8 text-base md:text-lg antialiased font-normal leading-relaxed text-white">
               At Cod Mountain Fish Co., we prioritize sustainability, ethical fishing practices, and responsible charter boat operations. We firmly believe that protecting our local waters and
               the fish species we target is of utmost importance.
               <span className='hidden md:block md:pt-2'>

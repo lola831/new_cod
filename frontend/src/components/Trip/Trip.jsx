@@ -21,14 +21,14 @@ const Trip = () => {
               {trip.title} - {trip.duration}hr
             </div>
 
-            <p className="text-gray-700 flex-grow text-sm">
+            <p className="text-gray-700 flex-grow text-base">
               Price: ${trip.price} <br/>
               Max Capacity: {trip.capacity}
             </p>
 
             {/* Trip description and BookButton for larger screens */}
             <div className="hidden sm:block">
-              <p className="text-sm font-normal antialiased leading-relaxed text-gray-500 overflow-ellipsis overflow-hidden flex-grow mt-2">
+              <p className="text-base font-normal antialiased leading-relaxed text-gray-500 overflow-ellipsis overflow-hidden flex-grow mt-2">
                 {trip.description}
               </p>
             </div>
@@ -43,7 +43,7 @@ const Trip = () => {
                   onClick={() => navigate('/trip-info')}
                   className="hover:bg-teal-500 text-teal-500 hover:text-white font-semibold
                              lg:px-6 lg:py-2 lg:h-[36px]
-                             px-6 py-2 text-sm
+                             px-6 py-2 text-base
                              rounded-md border-2 transition-colors duration-150
                              flex items-center justify-center"
                 >
