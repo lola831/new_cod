@@ -19,46 +19,50 @@ export default function About() {
         <div className="bg-gray-700 text-white p-4 py-10 space-y-4 md:space-y-0 md:flex md:flex-row md:gap-6 md:p-10">
           <img className="px-10 md:w-[400px] md:h-[400px] md:pt-12" src="./Photos/fam.jpeg" alt="family"></img>
           <div className="space-y-4">
-          <h1 className="text-teal-500 text-xl font-bold">About Us</h1>
-          <p>We are a premier charter fishing company located in Santa Cruz, California, offering unforgettable guided fishing tours of the beautiful Monterey Bay.
-            Founded by Greg Webb, a dedicated fisherman and seasoned captain, Cod Mountain Fish Co. is committed to providing an exceptional fishing experience for anglers
-            of all skill levels.</p>
-          <p>At Cod Mountain Fish Co., we prioritize sustainability, ethical fishing practices, and responsible charter boat operations. We firmly believe that protecting our
-            local waters and the fish species we target is of utmost importance. Through our daily operations, we strive to set an example of responsible practices and educate
-            our customers about the significance of sustainable fishing. We are proud to play a role in preserving our precious marine ecosystem for future generations.</p>
-          <p>What sets Cod Mountain Fish Co. apart is our unwavering commitment to delivering a personalized fishing experience. Whether you're a novice angler looking to
-            learn the ropes or a seasoned pro seeking an exciting challenge, our team will cater to your specific needs and desires. Step aboard our 2006 Parker 2520 XLD,
-            equipped with top-of-the-line tackle and gear from industry-leading brands. Enjoy the comfort of our heated cabin and have control over the music that sets the
-            tone for your day of fishing. We provide ample cold storage for your drinks and food, as well as sufficient space to hold your well-earned catch.</p>
-          <p>Thank you for considering Cod Mountain Fish Co. for your next fishing excursion. We invite you to join us on an unforgettable journey into the abundant waters of the
-            Monterey Bay. Let's make a memory, pull on some fish, and have a good time doing it!</p>
+            <h1 className="text-teal-500 text-xl font-bold">About Us</h1>
+            <p>We are a premier charter fishing company located in Santa Cruz, California, offering unforgettable guided fishing tours of the beautiful Monterey Bay.
+              Founded by Greg Webb, a dedicated fisherman and seasoned captain, Cod Mountain Fish Co. is committed to providing an exceptional fishing experience for anglers
+              of all skill levels.</p>
+            <p>At Cod Mountain Fish Co., we prioritize sustainability, ethical fishing practices, and responsible charter boat operations. We firmly believe that protecting our
+              local waters and the fish species we target is of utmost importance. Through our daily operations, we strive to set an example of responsible practices and educate
+              our customers about the significance of sustainable fishing. We are proud to play a role in preserving our precious marine ecosystem for future generations.</p>
+            <p>What sets Cod Mountain Fish Co. apart is our unwavering commitment to delivering a personalized fishing experience. Whether you're a novice angler looking to
+              learn the ropes or a seasoned pro seeking an exciting challenge, our team will cater to your specific needs and desires. Step aboard our 2006 Parker 2520 XLD,
+              equipped with top-of-the-line tackle and gear from industry-leading brands. Enjoy the comfort of our heated cabin and have control over the music that sets the
+              tone for your day of fishing. We provide ample cold storage for your drinks and food, as well as sufficient space to hold your well-earned catch.</p>
+            <p>Thank you for considering Cod Mountain Fish Co. for your next fishing excursion. We invite you to join us on an unforgettable journey into the abundant waters of the
+              Monterey Bay. Let's make a memory, pull on some fish, and have a good time doing it!</p>
           </div>
         </div>
 
-        <div className='bg-teal-500 text-white p-4 space-y-4'>
-        <img className="bg-cyan-600" src="./Photos/cap.jpeg" alt="Captain"></img>
-          <h1 className="text-yellow-500 text-xl font-bold">About the Captain</h1>
-          <p className=''>Captain Greg Webb brings over a decade of dedicated experience and a genuine love for fishing to Cod Mountain Fish Co.
-            His journey in the marine industry began as a deckhand on a charter boat in Santa Cruz, California, where he learned the
-            ropes and developed a deep appreciation for the ocean.</p>
-          <p className=''>Throughout his career, Captain Greg's passion for fishing led him to continuously expand his knowledge and refine his skills.
-            With each trip, he gained valuable insights into the local fishing grounds and mastered various techniques to ensure a successful
-            and enjoyable experience for his clients.</p>
-          <p className=''>As the owner and operator of Cod Mountain Fish Co., Captain Greg remains committed to providing exceptional service and memorable
-            fishing charters. He values sustainability, ethical practices, and responsible fishing, striving to make a positive impact on the
-            industry and the local marine ecosystem.</p>
-          <p className=''>Captain Greg's dedication to customer satisfaction is rooted in his genuine care and attention to detail. Whether you're a seasoned
-            angler or a novice fisherman, he takes the time to understand your needs and tailor the charter experience to exceed your expectations.</p>
-          <p className=''>With Captain Greg at the helm, you can expect a down-to-earth approach that focuses on creating an atmosphere of camaraderie and fun on
-            the water. His humble demeanor and friendly personality make him not only a skilled captain but also a personable guide who enjoys sharing
-            his knowledge and stories with fellow fishing enthusiasts.</p>
-          <p className=''>When you choose to embark on a fishing adventure with Captain Greg and Cod Mountain Fish Co., you can trust that you're in the hands of a
-            captain who genuinely cares about your experience. His commitment to safety, professionalism, and making lasting memories ensures that your
-            time on the water will be filled with excitement, relaxation, and the thrill of reeling in your catch.</p>
+        <div className='bg-teal-500 text-white p-4 py-10 space-y-4 md:space-y-0 md:flex md:flex-row md:gap-6 md:p-10'>
+
+          <div className="space-y-4">
+            <h1 className="text-yellow-500 text-xl font-bold">About the Captain</h1>
+            <p className=''>Captain Greg Webb brings over a decade of dedicated experience and a genuine love for fishing to Cod Mountain Fish Co.
+              His journey in the marine industry began as a deckhand on a charter boat in Santa Cruz, California, where he learned the
+              ropes and developed a deep appreciation for the ocean.</p>
+            <p className=''>Throughout his career, Captain Greg's passion for fishing led him to continuously expand his knowledge and refine his skills.
+              With each trip, he gained valuable insights into the local fishing grounds and mastered various techniques to ensure a successful
+              and enjoyable experience for his clients.</p>
+            <p className=''>As the owner and operator of Cod Mountain Fish Co., Captain Greg remains committed to providing exceptional service and memorable
+              fishing charters. He values sustainability, ethical practices, and responsible fishing, striving to make a positive impact on the
+              industry and the local marine ecosystem.</p>
+            <p className=''>Captain Greg's dedication to customer satisfaction is rooted in his genuine care and attention to detail. Whether you're a seasoned
+              angler or a novice fisherman, he takes the time to understand your needs and tailor the charter experience to exceed your expectations.</p>
+            <p className=''>With Captain Greg at the helm, you can expect a down-to-earth approach that focuses on creating an atmosphere of camaraderie and fun on
+              the water. His humble demeanor and friendly personality make him not only a skilled captain but also a personable guide who enjoys sharing
+              his knowledge and stories with fellow fishing enthusiasts.</p>
+            <p className=''>When you choose to embark on a fishing adventure with Captain Greg and Cod Mountain Fish Co., you can trust that you're in the hands of a
+              captain who genuinely cares about your experience. His commitment to safety, professionalism, and making lasting memories ensures that your
+              time on the water will be filled with excitement, relaxation, and the thrill of reeling in your catch.</p>
+          </div>
+          <img className="px-10 md:w-[400px] md:h-[400px] md:pt-12" src="./Photos/cap.jpeg" alt="Captain"></img>
         </div>
 
-        <div className='text-gray-700 p-4 space-y-4'>
-        <img src="./Photos/boat.png" alt="SeaMarie"></img>
+        <div className='text-gray-700 p-4 py-10 space-y-4 md:space-y-0 md:flex md:flex-row md:gap-6 md:p-10'>
+          <img className="px-10 md:w-[400px] md:h-[400px] md:pt-12" src="./Photos/boat.png" alt="SeaMarie"></img>
+          <div className="space-y-4">
           <h1 className="text-teal-500 text-xl font-bold">Sea Marie</h1>
           <p>Introducing the Sea Marie, the pride and joy of Cod Mountain Fish Co. This remarkable fishing vessel combines power, comfort, and functionality
             to deliver an extraordinary fishing experience in the beautiful waters of Santa Cruz. Powered by twin Yamaha 150hp engines, the Sea Marie is ready
@@ -78,10 +82,10 @@ export default function About() {
           <p>Experience the thrill of fishing aboard the Sea Marie, where adventure awaits on the stunning waters of Santa Cruz. This vessel combines the perfect blend of
             performance, comfort, and reliability to provide an unforgettable fishing experience. Trust in Captain Greg's expertise and the Sea Marie's capabilities to make
             your fishing dreams a reality.</p>
-          <Link className="bg-cyan-600 text-white active:bg-cyan-700 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" to="/availability">Book Now</Link>
+          </div>
+
         </div>
-
-
+         
         <div className="m-10 space-y-4">
           <h1 className="text-amber-500 text-xl font-bold">Trip Types</h1>
           <p> We offer a range of exciting trips tailored to different fishing preferences. Below are the trip types we offer, along with the details and rates. AM trips leave at 6am, PM trips at 3pm:</p>
