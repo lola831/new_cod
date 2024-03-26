@@ -79,10 +79,10 @@ const Review = () => {
         {/* <div className="mx-auto"> */}
             <Slider {...settings}>
                 {dataReviews.map((review, index) => (
-                    <div key={index} className="p-2 flex flex-col justify-between overflow-hidden rounded-lg shadow-xl review-card h-[240px]">
-                        <div className="mb-1 text-sm md:text-md lg:text-lg font-bold text-gray-700 antialiased leading-snug" id="name">{review.name}</div>
-                        <div className="mb-2 text-md text-yellow-400 antialiased leading-snug" id="rating">{'\u2605'.repeat(review.rating)}</div>
-                        <p className="text-xs md:text-sm text-gray-700 antialiased leading-snug" id="description">{truncateText(review.comments,100)}</p>
+                    <div key={index} className="p-2 flex flex-col justify-between overflow-hidden rounded-lg shadow-xl review-card h-[260px]">
+                        <div className="mb-1 text-base lg:text-lg font-bold text-gray-700 antialiased leading-snug" id="name">{review.name}</div>
+                        <div className="mb-2 text-base text-yellow-400 antialiased leading-snug" id="rating">{'\u2605'.repeat(review.rating)}</div>
+                        <p className="text-base text-gray-700 antialiased leading-snug" id="description">{truncateText(review.comments,100)}</p>
                     </div>
 
                 ))}

@@ -25,19 +25,19 @@ export default function Footer() {
         <h2 className="font-bold text-md pb-4 pl-1">Contact Us</h2>
         <div className="flex items-center pl-2">
           <div className="pr-2 text-xl"><IoLocation /></div>
-          <p className="text-xs font-semibold">Santa Cruz Harbor - S Dock Slip #15</p>
+          <p className="text-base">Santa Cruz Harbor - S Dock Slip #15</p>
         </div>
-        <p className="pl-9 pb-4 text-xs font-semibold">333 Lake Ave, Santa Cruz, CA 95062</p>
+        <p className="pl-9 pb-4 text-base">333 Lake Ave, Santa Cruz, CA 95062</p>
         <div className="flex items-center pb-4 pl-2">
           <div className="pr-2"><FaPhoneAlt /></div>
-          <p className="text-xs font-semibold">(+1) 831 419 8443</p>
+          <p className="text-base">(+1) 831 419 8443</p>
         </div>
         <div className="flex items-center pl-2 pb-5">
           <div className="pr-2"><MdEmail /></div>
-          <p className="text-xs font-semibold">codmountainfishco@gmail.com</p>
+          <p className="text-base">codmountainfishco@gmail.com</p>
         </div>
 
-        <div className='flex gap-3 text-gray-800 text-xl pl-2 pb-4'>
+        <div className='flex gap-3 text-gray-800 text-3xl pl-2 pb-4'>
         <a href="https://www.facebook.com/Codmountain" className="hover:text-gray-500" target="_blank">
           <FaFacebook />
         </a>
@@ -59,7 +59,7 @@ export default function Footer() {
 
       <div className="mb-6">
         <h2 className="font-bold text-md pb-4 pl-1">Quick Links</h2>
-        <div className=" flex flex-col text-xs font-semibold pl-2 gap-2">
+        <div className=" flex flex-col text-base pl-2 gap-2">
           <Link className="hover:text-gray-500" to="/about">About Us</Link>
           <Link className="hover:text-gray-500" to="/contact">Contact Us</Link>
           <Link className="hover:text-gray-500" to="/availability">Availability</Link>
