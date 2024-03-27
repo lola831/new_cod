@@ -42,17 +42,17 @@ const Review = () => {
 
     };
 
-    useEffect(() => {
-        const cards = document.querySelectorAll('.review-card');
-        let maxHeight = 0;
-        cards.forEach(card => {
-            const cardHeight = card.offsetHeight;
-            if (cardHeight > maxHeight) maxHeight = cardHeight;
-        });
-        cards.forEach(card => {
-            card.style.height = `${maxHeight}px`;
-        });
-    }, []);
+    // useEffect(() => {
+    //     const cards = document.querySelectorAll('.review-card');
+    //     let maxHeight = 0;
+    //     cards.forEach(card => {
+    //         const cardHeight = card.offsetHeight;
+    //         if (cardHeight > maxHeight) maxHeight = cardHeight;
+    //     });
+    //     cards.forEach(card => {
+    //         card.style.height = `${maxHeight}px`;
+    //     });
+    // }, []);
 
     const truncateText = (text, limit) => {
         const words = text.split(' ');
@@ -67,19 +67,20 @@ const Review = () => {
 
   return (
     <>
-        <style>
+        {/* <style>
             {
                 `.slick-slider:hover .slick-prev:before, .slick-slider:hover .slick-next:before {
-                    color: grey;
+                    // color: grey;
                     font-size: 36px;
 
                 }`
             }
-        </style>
+        </style> */}
+       
         {/* <div className="mx-auto"> */}
             <Slider {...settings}>
                 {dataReviews.map((review, index) => (
-                    <div key={index} className="p-2 flex flex-col justify-between overflow-hidden rounded-lg shadow-xl review-card h-[260px]">
+                    <div key={index} className="p-2 flex flex-col justify-between overflow-hidden rounded-lg shadow-xl review-card h-[260px] bg-white">
                         <div className="mb-1 text-base lg:text-lg font-bold text-gray-700 antialiased leading-snug" id="name">{review.name}</div>
                         <div className="mb-2 text-base text-yellow-400 antialiased leading-snug" id="rating">{'\u2605'.repeat(review.rating)}</div>
                         <p className="text-base text-gray-700 antialiased leading-snug" id="description">{truncateText(review.comments,100)}</p>

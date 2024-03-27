@@ -7,9 +7,9 @@ const Trip = () => {
   let navigate = useNavigate();
 
   return (
-    <div className="px-4 sm:px-10 py-6 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 bg-white">
+    <div className="px-4 sm:px-10 py-6 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
       {dataTrips.map((trip) => (
-        <div key={trip.id} className="flex flex-col border-2 rounded-xl overflow-hidden group md:hover:bg-white md:hover:shadow-xl md:transition-all md:duration-300 md:ease-in-out md:hover:-translate-y-1 md:hover:scale-105">
+        <div key={trip.id} className="flex flex-col bg-white border-2 rounded-xl overflow-hidden group md:hover:bg-white md:hover:shadow-xl md:transition-all md:duration-300 md:ease-in-out md:hover:-translate-y-1 md:hover:scale-105">
           {/* Trip images */}
           <div className="flex-shrink-0 h-32 sm:h-40 md:h-48 lg:h-48 bg-center bg-cover bg-no-repeat"
                style={{ backgroundImage: `url(${trip.photo})` }}>
