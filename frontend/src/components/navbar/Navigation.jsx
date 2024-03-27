@@ -19,16 +19,16 @@ export default function Navigation() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <nav className={`flex items-center justify-between p-2 sm:p-3 md:p-4 lg:p-5 absolute top-0 left-0 w-full ${isOpen ? 'bg-gray-700' : 'bg-transparent'} text-white z-50`}>
+    <nav className={`flex items-start justify-between p-4 lg:p-5 absolute top-0 left-0 w-full ${isOpen ? 'bg-gray-700' : 'bg-transparent'} text-white z-50`}>
       <Link to="/">
-        <img className="h-[80px] w-[80px] md:h-28 md:w-28 lg:h-28 lg:w-28 object-contain" src="./logo.png" alt="Logo" />
+        <img className="h-[120px] w-[120px] md:h-28 md:w-28 lg:h-28 lg:w-28 object-contain" src="./logo.png" alt="Logo" />
       </Link>
       {/* Toggle button for mobile view */}
-      <button onClick={() => setIsOpen(!isOpen)} className="text-3xl pr-5 md:hidden">
+      <button onClick={() => setIsOpen(!isOpen)} className="text-3xl pt-3 pr-2 md:hidden">
         {isOpen ? <FaTimes /> : <FaBars />}
       </button>
       {/* Links container */}
-      <div className={`flex items-start ${isOpen ? "flex-col absolute top-16 left-0 w-full bg-gray-700 md:bg-transparent py-2" : "hidden"} md:flex md:items-center md:relative md:w-auto`}>
+      <div className={`flex items-start ${isOpen ? "flex-col absolute top-16 mt-9 pl-4 left-0 w-full bg-gray-700 md:bg-transparent py-2" : "hidden"} md:flex md:items-center md:relative md:w-auto`}>
 
         {links.map((link, index) => (
           <div className={`${isOpen ? "hover:bg-gray-300 w-full" : ""}`}>

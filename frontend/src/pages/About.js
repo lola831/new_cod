@@ -10,7 +10,7 @@ export default function About() {
         <div className="flex justify-center p-4 pt-10">
           <h1 className="text-3xl md:text-3xl lg:text-3xl xl:text-4xl text-teal-500 font-lobster">Cod Mountain Fish Co.</h1>
         </div>
-        <div className="flex flex-col items-center gap-4 p-4 pb-10 md:px-10 lg:px-[100px]">
+        <div className="flex flex-col items-center gap-4 p-4 pb-10 md:px-[100px] lg:px-[150px]">
           <p className="text-gray-700">Welcome to Cod Mountain Fish Co., where every fishing trip is tailored to your preferences and skill level.
             Our dedicated crew is here to ensure that your time on the water is not only productive but also enjoyable
             and filled with excitement.</p>
@@ -85,7 +85,7 @@ export default function About() {
           </div>
 
         </div>
-         
+
         <div className="m-10 space-y-4">
           <h1 className="text-amber-500 text-xl font-bold">Trip Types</h1>
           <p> We offer a range of exciting trips tailored to different fishing preferences. Below are the trip types we offer, along with the details and rates. AM trips leave at 6am, PM trips at 3pm:</p>
