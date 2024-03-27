@@ -107,11 +107,19 @@ const Calendar = () => {
 
     return (
         <div>
-            {/* <img src="https://codmountain.s3.us-west-1.amazonaws.com/hooked-up-charter-boat-hero1.jpeg" alt="cover-photo" class="w-full h-80 object-cover"></img> */}
             <HeroImage />
-            <div className="border border-teal-500 w-[300px] ml-[85px] h-[auto] mb-5 rounded-md">
-                <div className="pl-3 p-1 font-semibold bg-teal-500 rounded-t">Trip Types</div>
-                <div className="border-t text-sm pl-3 p-1">
+            <div className="p-4 flex flex-col justify-center items-center bg-teal-500">
+
+            <h1 className="p-4 text-2xl text-gray-700 font-lobster">Select Your Date, Choose Your Trip, and Get Ready to Drop 'Em!</h1>
+
+                {/* <p className="block mb-6 text-base md:text-md lg:text-lg xl:text-xl text-white antialiased ">
+                Welcome to our booking page! Whether you're a seasoned angler or looking to experience your first catch, we offer a variety of fishing trips tailored to suit every skill level. Get started on planning your next great adventure with us.
+              </p> */}
+
+            </div>
+            {/* <div className="border border-teal-500 rounded-md w-[200px]">
+                <h2 className="pl-3 p-1 font-semibold bg-teal-500 rounded-t text-lg">Trip Types</h2>
+                <div className="border-t text-base pl-3 p-1">
                     <div className="flex items-center gap-2">
                         <img src="./rockfish.png" alt="rockfish" className="h-8 w-10 object-contain" />
                         <div className="">Rockfish</div>
@@ -129,9 +137,9 @@ const Calendar = () => {
                         <div>Wildlife Tour</div>
                     </div>
                 </div>
-            </div>
-            <div className="flex justify-center gap-5 ">
-                <div className="calendar-box w-[650px] h-[auto]">
+            </div> */}
+            <div className="flex flex-col md:flex-row justify-center gap-5 p-4">
+                <div className="calendar-box ">
                     <div className="flex gap-5 bg-teal-500 border border-teal-500 justify-center p-1">
                         <div className="font-semibold w-[150px]">{months[today.month()]}, {today.year()}</div>
                         <div className="flex items-center gap-5">
